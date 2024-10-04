@@ -1,15 +1,15 @@
+<script>
+    import Navigation from '../lib/Navigation.svelte';
+    import Header from '../lib/Header.svelte';
+    import About from '../lib/About.svelte';
+    import Calendar from '../lib/Calendar.svelte';
+    import Footer from '../lib/Footer.svelte';
+</script>
+
 <main>
-   <h1>We love web fdnd</h1>
+   <Navigation/>
+   <Header/>
+   <About/>
+   <Calendar/>
+   <Footer/>
 </main>
-
-<style>
-
-    h1 {
-        display: grid;
-        place-items: center;
-        height: 100dvh;
-        color: var(--white-color);
-        font-weight: 700;
-        font-size: 4rem;
-    }
-</style>
