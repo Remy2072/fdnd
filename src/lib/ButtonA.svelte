@@ -10,11 +10,11 @@
     a {
         position: relative;
         z-index: 1;
-        border: 1px solid var(--nightblue-color);
+        border: 1px solid var(--blue);
         padding: .75rem;
-        background-color: var(--white-color);
+        background-color: var(--white);
         border-radius: 10px;
-        color: var(--nightblue-color);
+        color: var(--blue);
         font-weight: 700;
         text-decoration: none;
     }
@@ -30,10 +30,10 @@
         position: absolute;
         width: 100%;
         height: 100%;
-        border: 1px solid var(--nightblue-color);
-        background-color: var(--white-color);
+        border: 1px solid var(--blue);
+        background-color: var(--white);
         border-radius: 10px;
-        color: var(--nightblue-color);
+        color: var(--blue);
         right: 2px;
         top: 2px;
     }

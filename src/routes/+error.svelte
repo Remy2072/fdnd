@@ -23,7 +23,7 @@
 </script>
 
 <main>
-    <h1 id="text">Dit is geen pagina... het is een illusie!</h1>
+    <h1 id="text">De pagina is zoekgeraakt. Tijd voor een nieuwe poging!</h1>
     <h2>{$page.status}</h2>
 </main>
 
@@ -39,7 +39,7 @@
 
     h1 {
         position: relative;
-        color: var(--nightblue-color);
+        color: var(--blue);
         font-weight: 700;
         font-size: 3rem; 
         text-align: center;
@@ -49,11 +49,11 @@
 
     h2 {
         position: absolute;
-        color: var(--nightblue-color);
+        color: var(--blue);
         bottom: 0;
         right: 0;
-        padding: 1rem; 
-        font-size: 1.5rem; 
+        padding: 5rem; 
+        font-size: var(--radius); 
     }
 
     @media (min-width: 700px) {
@@ -62,7 +62,7 @@
         }
 
         h2 {
-            font-size: 1.5rem;
+            font-size: var(--radius);
         }
     }
 
