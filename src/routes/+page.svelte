@@ -8,7 +8,7 @@
 
 <main>
    <Navigation/>
-   <Header/>
+   <Hero/>
    <About/>
    <Calendar/>
    <Footer/>
