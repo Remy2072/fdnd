@@ -4,6 +4,12 @@
     --base-color: #A675F5;
     --white-color:#FFFFFF;
     --nightblue-color: #050542;
+
+    --grid-1: 100vw / 24;
+    --grid-1-calc: calc(var(--grid-1));
+    --padding-side: clamp(1rem, var(--grid-1-calc), 5rem);
+    --max-width: 117rem;
+    --calc-side: calc((100vw - var(--max-width)) / 2);
 }
 
 * {
