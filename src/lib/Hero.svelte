@@ -1,3 +1,5 @@
+<!-- Can be removed -->
+
 <section>
 
 </section>
@@ -7,7 +9,5 @@
     height: 50vh;
     width: 100%;
     background-color: var(--white-color);
-
-    
   }
 </style>

@@ -1,6 +1,10 @@
-<header>
-	<nav>
-		<article>
+<script>
+	import Anchor from './Anchor.svelte';
+</script>
+
+<nav>
+	<ul>
+		<li>
 			<a class="hva-logo" href="https://hva.nl">
 				<!-- <span class="sr-only">Een studie aan de Hogeschool van Amsterdam</span> -->
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 35">
@@ -9,45 +13,50 @@
 				</svg>
 			</a>
 			<p>Frontend Design & Development</p>
-		</article>
+		</li>
 
-		<aside>
-			<a href="#">
-				
+		<li>
+			<a href="https://www.instagram.com/fdnd.nl/">
+				<svg width="40" height="40" viewBox="0 0 24 24" style="fill: var(--nightblue-color);"><path d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248 4.623 4.623 0 0 0 0-9.248zm0 7.627a3.004 3.004 0 1 1 0-6.008 3.004 3.004 0 0 1 0 6.008z"></path><circle cx="16.806" cy="7.207" r="1.078"></circle><path d="M20.533 6.111A4.605 4.605 0 0 0 17.9 3.479a6.606 6.606 0 0 0-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.554 6.554 0 0 0-2.184.42 4.6 4.6 0 0 0-2.633 2.632 6.585 6.585 0 0 0-.419 2.186c-.043.962-.056 1.267-.056 3.71 0 2.442 0 2.753.056 3.71.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.042 1.268.055 3.71.055s2.755 0 3.71-.055a6.615 6.615 0 0 0 2.186-.419 4.613 4.613 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.186.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.581 6.581 0 0 0-.421-2.217zm-1.218 9.532a5.043 5.043 0 0 1-.311 1.688 2.987 2.987 0 0 1-1.712 1.711 4.985 4.985 0 0 1-1.67.311c-.95.044-1.218.055-3.654.055-2.438 0-2.687 0-3.655-.055a4.96 4.96 0 0 1-1.669-.311 2.985 2.985 0 0 1-1.719-1.711 5.08 5.08 0 0 1-.311-1.669c-.043-.95-.053-1.218-.053-3.654 0-2.437 0-2.686.053-3.655a5.038 5.038 0 0 1 .311-1.687c.305-.789.93-1.41 1.719-1.712a5.01 5.01 0 0 1 1.669-.311c.951-.043 1.218-.055 3.655-.055s2.687 0 3.654.055a4.96 4.96 0 0 1 1.67.311 2.991 2.991 0 0 1 1.712 1.712 5.08 5.08 0 0 1 .311 1.669c.043.951.054 1.218.054 3.655 0 2.436 0 2.698-.043 3.654h-.011z"></path></svg>
 			</a>
-			
-			<a href="#">
-				
+
+			<a href="https://www.linkedin.com/company/fdnd/">
+				<svg width="40" height="40" viewBox="0 0 24 24" style="fill: var(--nightblue-color);"><path d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM8.339 18.337H5.667v-8.59h2.672v8.59zM7.003 8.574a1.548 1.548 0 1 1 0-3.096 1.548 1.548 0 0 1 0 3.096zm11.335 9.763h-2.669V14.16c0-.996-.018-2.277-1.388-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248h-2.667v-8.59h2.56v1.174h.037c.355-.675 1.227-1.387 2.524-1.387 2.704 0 3.203 1.778 3.203 4.092v4.71z"></path></svg>
 			</a>
-		</aside>
-	</nav>
+		</li>
 
-	fdnd link (pos absolute)
+		<li>
+			<Anchor class="jevader" anchorLink= {'https://fdnd.nl/'} anchorLabel= {'Link naar fdnd.nl'} anchorText= {'FDND.nl'}/>
+		</li>
+	</ul>
 
-	<!-- <nav>nav</nav> -->
-</header>
+	<!-- <ul>ul</ul> -->
+</nav>
 
 <style>
-	header {
-    background-color: var(--base-color);
-    color: var(--color);
-    padding: 1.5rem 0 0 var(--padding-side);
+	nav {
+		background-color: var(--base-color);
+		color: var(--color);
+		padding: 1.5rem 0 0 var(--padding-side);
 	}
 
-	header nav {
+	nav ul {
 		width: 100%;
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: space-between;
+		gap: 1rem;
 	}
 
-	header nav article {
+	/* HvA Logo */
+	nav ul li:nth-child(1) {
 		display: flex;
-    gap: 1.75rem;
-    flex-wrap: wrap;
-    align-items: center;
-    width: calc(100% - 3rem* 2 - var(--padding-side));
-    max-width: calc(var(--max-width) - 1.5rem* 6 - var(--padding-side));
-    min-height: 1.5rem;
+		gap: 1.75rem;
+		flex-wrap: wrap;
+		align-items: center;
+		width: calc(100% - 3rem * 2 - var(--padding-side));
+		max-width: calc(var(--max-width) - 1.5rem* 6 - var(--padding-side));
+		min-height: 1.5rem;
 
 		@media (max-width: 750px) {
         flex-direction: column;
@@ -59,35 +68,34 @@
 			width: max-content;
 		}
 	}
-
-	header nav article a {
+	
+	nav ul li:nth-child(1) a {
 		display: block;
-    width: calc(250 / 1440* 100vw);
-    max-width: 330px;
-    min-width: 16rem;
+		width: calc(250 / 1440* 100vw);
+		max-width: 330px;
+		min-width: 16rem;
 	}
 	
-	header nav article a::after {
-		/* Verander span naar ::after */
+	nav ul li:nth-child(1) a::after {
 		content: "Een studie aan de Hogeschool van Amsterdam";
-    position: absolute;
-    text-indent: -9999px;
+		position: absolute;
+		text-indent: -9999px;
 	}
 
-	header nav article p {
+	nav ul li:nth-child(1) p {
 		position: relative;
-    letter-spacing: -0.03em;
-    margin-top: -0.5em;
-    font-size: clamp(0.75rem, calc(var(--grid-1)* 16 / 60), 1.25rem);
+		letter-spacing: -0.03em;
+		margin-top: -0.5em;
+		font-size: clamp(0.75rem, calc(var(--grid-1)* 16 / 60), 1.25rem);
 	}
 
-	header nav article p::before {
-		content: '';
-    position: absolute;
-    left: -0.875rem;
-    width: 1px;
-    height: 100%;
-    background-color: currentColor;
+	nav ul li:nth-child(1) p::before {
+		content: "";
+		position: absolute;
+		left: -0.875rem;
+		width: 1px;
+		height: 100%;
+		background-color: currentColor;
 
 		/* @media (max-width: 750px) {
 			display: none;
@@ -95,19 +103,54 @@
 	}
 
 	@media (max-width: 750px) {
-		header nav article p::before {
+		nav ul li:nth-child(1) p::before {
 			display: none;
-
 		}
 	}
 	
 	/* Media query werkt niet nested in een pseudo element??? zoek naar container queries! */
 
-	header nav aside {
+
+	/* Socials */
+	nav ul li:nth-child(2) {
 		display: flex;
 		gap: 1rem;
-		margin-right: calc(var(--padding-side) + var(--calc-side));
+		margin-right: var(--padding-side);
 	}
+	
+	nav ul li:nth-child(2) a {
+		display: block;
+		width: 1.5rem;
+		height: 1.5rem;
+	}
+
+	/* FDND link & menu button */
+	nav ul li:nth-child(3) {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1rem;
+		align-items: center;
+		margin-right: var(--grid-1-calc);
+		z-index: 10;
+		
+	}
+	
+	nav ul li:nth-child(3) .jevader {
+		margin: 20rem;
+		
+	}
+	
+	nav ul li:nth-child(3) button {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1rem;
+		align-items: center;
+		margin-right: var(--grid-1-calc);
+		z-index: 10;
+		
+	}
+
+
 
 	
 </style>

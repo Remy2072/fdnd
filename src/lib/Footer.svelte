@@ -1,5 +1,5 @@
 <script>
-        import ButtonA from '../lib/ButtonA.svelte';
+        import Anchor from './Anchor.svelte';
 </script>
 
 <footer>
@@ -8,13 +8,13 @@
         <p>FDND maakt gebruik van microsites. Microsites zijn kleine websites ter ondersteuning van een campagne, informatie over een product, dienst of voor een ander specifiek doel.</p>
     </article>
     <ul>
-        <li><ButtonA btnLink= {'https://fdnd.nl/'} btnLabel= {'Link naar fdnd.nl'} btnText= {'FDND.nl'}></ButtonA></li>
-        <li><ButtonA btnLink= {'https://contact.fdnd.nl/'} btnLabel= {'Link naar contact.fdnd.nl'} btnText= {'Contact en routebeschrijving'}></ButtonA></li>
-        <li><ButtonA btnLink= {'https://programma.fdnd.nl/'} btnLabel= {'Link naar programma.fdnd.nl'} btnText= {'Programma'}></ButtonA></li>
-        <li><ButtonA btnLink= {'https://partners.fdnd.nl/'} btnLabel= {'Link naar partners.fdnd.nl'} btnText= {'Partners'}></ButtonA></li>
-        <li><ButtonA btnLink= {'https://niveaumatrix.fdnd.nl/'} btnLabel= {'Link naar niveaumatrix.fdnd.nl'} btnText= {'Niveaumatrix'}></ButtonA></li>
-        <li><ButtonA btnLink= {'https://docs.fdnd.nl/'} btnLabel= {'Link naar docs.fdnd.nl'} btnText= {'Documenten'}></ButtonA></li>
-        <li><ButtonA btnLink= {'#'} btnLabel= {'Link naar weloveweb.fdnd.nl'} btnText= {'We Love Web'}></ButtonA></li>
+        <li><Anchor anchorLink= {'https://fdnd.nl/'} anchorLabel= {'Link naar fdnd.nl'} anchorText= {'FDND.nl'}/></li>
+        <li><Anchor anchorLink= {'https://contact.fdnd.nl/'} anchorLabel= {'Link naar contact.fdnd.nl'} anchorText= {'Contact en routebeschrijving'}/></li>
+        <li><Anchor anchorLink= {'https://programma.fdnd.nl/'} anchorLabel= {'Link naar programma.fdnd.nl'} anchorText= {'Programma'}/></li>
+        <li><Anchor anchorLink= {'https://partners.fdnd.nl/'} anchorLabel= {'Link naar partners.fdnd.nl'} anchorText= {'Partners'}/></li>
+        <li><Anchor anchorLink= {'https://niveaumatrix.fdnd.nl/'} anchorLabel= {'Link naar niveaumatrix.fdnd.nl'} anchorText= {'Niveaumatrix'}/></li>
+        <li><Anchor anchorLink= {'https://docs.fdnd.nl/'} anchorLabel= {'Link naar docs.fdnd.nl'} anchorText= {'Documenten'}/></li>
+        <li><Anchor anchorLink= {'#'} anchorLabel= {'Link naar weloveweb.fdnd.nl'} anchorText= {'We Love Web'}/></li>
     </ul>
     <aside>
         <svg class="creating-tomorrow" width="150" height="16" viewBox="0 0 150 16" fill="none" xmlns="http://www.w3.org/2000/svg">
