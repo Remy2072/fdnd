@@ -26,7 +26,7 @@
 <style>
     footer {
         width: 100%;
-        background-color: var(--base-color);
+        background-color: var(--purple);
         padding: clamp(1rem, calc(100vw / 24), 5rem) clamp(1rem, calc(100vw / 24), 5rem) 0 calc(clamp(1rem, calc(100vw / 24), 5rem) * 2);
         display: flex;
         flex-direction: column;
@@ -39,15 +39,15 @@
         flex-direction: column;
         max-width: 800px;
         width: 100%;
-        color: var(--nightblue-color);
+        color: var(--blue);
     }
 
     footer article h2 {
-        font-size: clamp(1.5rem, calc(40 / 60* 100vw / 24), 3.25rem);
+        font-size: clamp(var(--radius), calc(40 / 60* 100vw / 24), 3.25rem);
     }
 
     footer article p {
-        font-size: clamp(1rem, calc(18 / 60* 100vw / 24), 1.5rem);
+        font-size: clamp(1rem, calc(18 / 60* 100vw / 24), var(--radius));
         font-weight: 500;
         letter-spacing: -0.03em;
         margin-top: 1.1em;
@@ -73,6 +73,6 @@
         justify-content: space-between;
         width: 100%;
         align-items: center;
-        padding: 5rem 0 1.5rem;
+        padding: 5rem 0 var(--radius);
     }
 </style>
