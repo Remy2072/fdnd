@@ -17,6 +17,7 @@
 		margin: 0 var(--radius) 0 var(--radius);
 		background-color: var(--white);
 		border-radius: 1.48rem;
+		height: 200vh;
 	}
 
 	.fake-div {

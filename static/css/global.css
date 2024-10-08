@@ -9,6 +9,15 @@
     --yellow: #FFFC86;
 
     --radius: 1.5rem;
+    --font-size-sm: 16px;
+    --font-size-md: 18px;
+    --font-size-lg: 40px;
+    --font-size-xl: 48px;
+
+
+    --font-weight-reg: 400;
+    --font-weight-bold: 700;
+
 }
 
 * {
