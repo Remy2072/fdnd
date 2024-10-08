@@ -33,7 +33,8 @@
 		bottom: 100%;
 		width: var(--radius);
 		height: var(--radius);
-		background: radial-gradient(circle at right top, transparent 1.48rem, var(--base-color) 1.48rem) border-box;
+		background: radial-gradient(circle at right top, transparent 1.48rem, var(--purple) 1.48rem)
+			border-box;
 	}
 
 	.fake-div::after {
@@ -43,6 +44,7 @@
 		bottom: 100%;
 		width: var(--radius);
 		height: var(--radius);
-		background: radial-gradient(circle at left top, transparent 1.48rem, var(--base-color) 1.48rem) border-box;
+		background: radial-gradient(circle at left top, transparent 1.48rem, var(--purple) 1.48rem)
+			border-box;
 	}
 </style>
