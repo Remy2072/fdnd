@@ -133,6 +133,7 @@
 		margin-top: 1.5rem;
 		font-size: var(--font-size-md);
 		color: var(--blue);
+		margin-bottom: 3rem;
 	}
 
 	@media only screen and (min-width: 768px) {

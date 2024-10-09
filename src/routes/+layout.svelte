@@ -13,10 +13,10 @@
 
 <style>
 	main {
-		margin: 0 var(--radius) 0 var(--radius);
+		margin: 0 14px 0 14px;
 		background-color: var(--white);
 		border-radius: 1.48rem;
-		height: 100vh;
+		min-height: 100vh;
 	}
 
 	.fake-div {
