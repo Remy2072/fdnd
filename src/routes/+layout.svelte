@@ -1,6 +1,5 @@
 <script>
-	import Footer from '../lib/Footer.svelte';
-	import Navigation from '../lib/Navigation.svelte';
+    import {Navigation, Footer} from '$lib'
 </script>
 
 <Navigation />
@@ -17,6 +16,7 @@
 		margin: 0 var(--radius) 0 var(--radius);
 		background-color: var(--white);
 		border-radius: 1.48rem;
+		height: 100vh;
 	}
 
 	.fake-div {
@@ -26,6 +26,7 @@
 		position: sticky;
 		bottom: 0;
 	}
+	
 	.fake-div::before {
 		content: '';
 		position: absolute;

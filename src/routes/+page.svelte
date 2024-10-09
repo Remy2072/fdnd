@@ -1,9 +1,7 @@
 <script>
-    import Header from '../lib/Header.svelte';
-    import About from '../lib/About.svelte';
-    import Calendar from '../lib/Calendar.svelte';
+    import {Hero, About, Calendar} from '$lib'
 </script>
 
-<Header/>
+<Hero />
 <About/>
 <Calendar/>
