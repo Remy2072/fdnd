@@ -1,10 +1,10 @@
 <script>
-	export let btnLink = '#';
-	export let btnText = 'Button text';
-	export let btnLabel = 'Enter Aria-Label';
+	export let anchorLink = '#';
+	export let anchorText = 'Button text';
+	export let anchorLabel = 'Enter Aria-Label';
 </script>
 
-<a href="{btnLink}" aria-label="{btnLabel}">{btnText}</a>
+<a href="{anchorLink}" aria-label="{anchorLabel}">{anchorText}</a>
 
 <style>
     a {
