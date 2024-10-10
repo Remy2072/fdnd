@@ -23,7 +23,7 @@
 
 <style>
 	section {
-		padding: 0 1.25rem 0 1.25rem;
+		padding: 0 1.25rem;
 		display: flex;
 		flex-direction: column;
 	}
@@ -33,13 +33,13 @@
 			flex-direction: row;
 			align-items: center;
 			gap: 1.875rem;
-			padding: 0 3.75rem 0 3.75rem;
+			padding: 0 3.75rem;
 		}
 	}
 
 	@media only screen and (min-width: 1024px) {
 		section {
-			padding: 0 5rem 0 5rem;
+			padding: 0 5rem;
 			gap: 3.75rem;
 		}
 	}
