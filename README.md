@@ -48,7 +48,7 @@ Hier vind je de bronnen van de tools die we hebben gebruikt.
 ![image](https://github.com/user-attachments/assets/f55ed6b2-1d62-4999-9d23-7e4fb1f00cf3)
 
 ## Installatiehandleiding
-Instructies voor het lokaal opzetten van de squadpage, zodat ontwikkelaars het project kunnen downloaden, installeren en zelf kunnen draaien met behulp van SvelteKit.
+Instructies voor het lokaal opzetten van de FDND pagina, zodat ontwikkelaars het project kunnen downloaden, installeren en zelf kunnen draaien met behulp van SvelteKit.
 
 **1. Vereisten**
 
