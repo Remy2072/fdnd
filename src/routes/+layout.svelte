@@ -16,12 +16,12 @@
 		margin: 0 14px 0 14px;
 		background-color: var(--white);
 		border-radius: 1.48rem;
-		min-height: 100vh;
+		min-height: 200vh;
 	}
 
 	.fake-div {
 		width: 100%;
-		height: var(--radius);
+		height: 14px;
 		background: var(--purple);
 		position: sticky;
 		bottom: 0;
@@ -30,7 +30,7 @@
 	.fake-div::before {
 		content: '';
 		position: absolute;
-		left: var(--radius);
+		left: 14px;
 		bottom: 100%;
 		width: var(--radius);
 		height: var(--radius);
@@ -41,7 +41,7 @@
 	.fake-div::after {
 		content: '';
 		position: absolute;
-		right: var(--radius);
+		right: 14px;
 		bottom: 100%;
 		width: var(--radius);
 		height: var(--radius);
