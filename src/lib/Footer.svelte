@@ -1,6 +1,5 @@
 <script>
-        import Anchor from './Anchor.svelte';
-        import Svg from './Svg.svelte';
+    import { Svg, Anchor } from '$lib';
 </script>
 
 <footer>

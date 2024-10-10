@@ -74,6 +74,7 @@
 		width: 100%;
 		height: auto;
 		border-radius: 1.25rem;
+		display: block;
 	}
 
 	h2 {
